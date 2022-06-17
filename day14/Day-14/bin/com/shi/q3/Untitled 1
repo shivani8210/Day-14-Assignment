@@ -1,0 +1,40 @@
+Q3) Explain Finally and Final Keyword with an Example?
+
+Ans- Final Keyword: It is non-accessible key word its makes final keyword or non changeable. It is used attributes and methods and also which makes them non-changeable (impossible to inherit or override). It is used to denote constants. It can be used with variables, methods, and classes. Once any entity (variable, method or class) is declared final, it can be assigned only once.
+
+	 Example:
+ 
+		public class Demo {
+			public static void main(String[] args) {
+        		Final d1=new Final();
+    		}
+		}
+		class Final extends Demo{
+   			final String name="Shi";
+		}
+
+
+	Finally Keyword: It is always executed whether an exception is handled or not. Therefore, it contains all the necessary statements that need to be executed regardless of the exception occurs or not. It can be used to put "cleanup" code such as closing a file, closing connection, etc. The important statements to be printed can be placed in the finally block.
+	
+	Example:
+	
+		class Finally extends Demo {
+			public static void main(String[] args) {
+        	try {
+            	int[] myNumbers = {1, 2, 3};
+            	System.out.println(myNumbers[5]);
+        	} 
+        	catch(Exception e) {
+            	System.out.println("Something  wrong.");
+        	} 
+        	finally {
+            	System.out.println("Inside the finally method");
+        	}
+    	}
+
+		
+	
+	
+	
+	
+	
